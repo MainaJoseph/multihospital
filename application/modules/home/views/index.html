@@ -1,0 +1,332 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>Documentation | Hms Hospital Management System</title>
+    <!-- Framework CSS -->
+    <link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+    <!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+    <style type="text/css" media="screen">
+        p, table, hr, .box { margin-bottom:25px; }
+        .box p { margin-bottom:10px; }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <strong>
+        <h3 class="center alt">&ldquo;HMS Hospital Management System&rdquo; Documentation by &ldquo;Code Aristos&rdquo; v2.0</h3>
+
+        <hr>
+
+        <h1 class="center">&ldquo;HMS Documentation&rdquo;</h1>
+
+        <div class="borderTop">
+            <div class="span-6 colborder info prepend-1">
+                <p class="prepend-top">
+                    <strong>
+                        Updated: June, 2019<br>
+                        By: Code Aristos<br>
+                        Email: <a href="mailto:rizvi@codearistos.com">rizvi.mahmud.plabon@gmail.com</a>
+                    </strong>
+                </p>
+            </div><!-- end div .span-6 -->		
+
+            <div class="span-12 last">
+                <p class="prepend-top append-0">Thank you for purchasing my application. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://codecanyon.net/user/codearistos">here</a>. Thanks so much!</p>
+            </div>
+        </div><!-- end div .borderTop -->
+
+        <hr>
+
+        <h2 id="toc" class="alt">Table of Contents</h2>
+        <ol class="alpha">
+            <li><a href="#htmlStructure">Installation</a></li>
+            <li><a href="#cssFiles">Modules</a></li>
+            <li><a href="#javascript">Department</a></li>
+            <li><a href="#psdFiles">Doctors</a></li>
+            <li><a href="#credits">Patients</a></li>
+
+            <li><a href="#humanresources">Human Resources</a> <em class="quiet small"></em></li>
+            <li><a href="#financialactivities">Financial Activities</a>  <em class="quiet small"></em></li>
+            <li><a href="#medicine">Medicine</a></li>
+            <li><a href="#donor">Donor</a></li>
+            <li><a href="#bed">Bed</a></li>
+            <li><a href="#report">Report</a></li>
+<li><a href="#sms">SMS</a></li>
+
+            <li><a href="#settings">Settings</a> <em class="quiet small"></em></li>
+        </ol>
+
+        <hr>
+
+        <h3 id="htmlStructure"><strong>A) Installation</strong> - <a href="#toc">top</a></h3>
+        <p> 1. Upload all the files from the folder <strong>HMS-Hospital-Management-System</strong> to your server directory.<br/>
+            2. Create a database.<br/>
+            3. Go to the Database file application/config/database.php and fill up with your database details.<br/>
+
+        <blockquote>
+            $db['default']['hostname'] = 'Host Name'; <br>
+            $db['default']['username'] = 'Database Username'; <br>
+            $db['default']['password'] = 'Password'; <br>
+            $db['default']['database'] = 'Database Name'; <br>
+        </blockquote>
+
+        4. Import the sql file into your database from the <strong>DB folder</strong> of your main download folder.<br/>
+        5. Upload the .htaccess file from <strong>htaccess</strong> folder into the server directory.<br/>
+        <br>
+        <p class="green"">Its Done !!!!!</p>
+        
+        <strong>Default Login Details:</strong><br><br>
+        
+        <table>
+                  <thead>
+                    <tr><th>Role</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                  </tr></thead>
+                  <tbody>
+                      <tr>
+                         <td>Admin</td>
+                         <td>admin@hms.com </td>
+                         <td> 12345</td>
+                      </tr>
+                      <tr>
+                          <td>Doctor</td>
+                          <td>doctor@hms.com</td>
+                          <td>12345</td>
+                      </tr>
+				<tr>
+                          <td>Patient</td>
+                          <td>patient@hms.com</td>
+                          <td>12345</td>
+                      </tr>
+                       <tr>
+                          <td>Nurse</td>
+                          <td>nurse@hms.com</td>
+                          <td>12345</td>
+                      </tr>
+                       <tr>
+                          <td>Pharmacist</td>
+                          <td>pharmacist@hms.com</td>
+                          <td>12345</td>
+                      </tr>
+                       <tr>
+                          <td>Accountant</td>
+                          <td>accountant@hms.com</td>
+                          <td>12345</td>
+                      </tr>
+                      
+                      <tr>
+                          <td>Laboratorist</td>
+                          <td>laboratorist@hms.com</td>
+                          <td>12345</td>
+                      </tr>
+				<tr>
+                          <td>Receptionist</td>
+                          <td>receptionist@hms.com</td>
+                          <td>12345</td>
+                      </tr>
+
+                     
+                  </tbody>
+              </table>
+        
+    </p>
+
+
+    <hr>
+
+    <h3 id="cssFiles"><strong>B) Modules </strong> - <a href="#toc">top</a></h3>
+
+
+    <p>
+        Through this HMS Hospital Management System User can manage administrational 
+        and financial activities of a Hospital, Clinic or Diagnostic Centre.
+
+        There are modules like patients, doctors, nurse, accountant, pharmacist through which user can
+        manage the human resources and their details.
+    </p>
+
+
+
+    <hr>
+
+    <h3 id="javascript"><strong>C) Departments</strong> - <a href="#toc">top</a></h3>
+
+
+    <p>Departments is a modules through which user can create and store all the department
+        names and their descriptions.</p>
+    <p>User also can edit and delete departments and their descriptions.</p>
+    <p>steps:</p>
+    <p>Go to "Departments" at Side menu.<br> It will display department list.</p>
+
+    <p>
+        To create a new department click on "Add New" button at the left top.<br>
+        A form will appear. Fill the form and submit.
+    </p>
+
+
+
+    <hr>
+
+    <h3 id="psdFiles"><strong>D) Doctors</strong> - <a href="#toc">top</a></h3>
+    <p>Doctor's name can be listed in Doctor module.
+    <br/> New doctors can be created by clicking on 'add new' button.<p>
+
+    <hr>
+
+    <h3 id="credits"><strong>E) Patients</strong> - <a href="#toc">top</a></h3>
+    <p>Patient's name can be listed in Patient module.
+    <br/> New patients can be created by clicking on 'add new' button.<p> 
+    <hr>
+
+    <h3 id="humanresources"><strong>F) Human Resources</strong> - <a href="#toc">top</a></h3>
+    <p> Human resources comprise with four different modules<br></p> 
+    <p> Those are:<br>
+        1) Nurse<br>
+        1) Pharmacist<br>
+        1) Laboratorist<br>
+        1) Accountant<br>
+    </p> 
+    <hr>
+
+    <h3 id="financialactivities"><strong>G) Financial Activities</strong> - <a href="#toc">top</a></h3>
+    <p> Financial activities module manage all the financial transaction and reports of the hospital.
+        User can create payments, invoices & expenses.
+    </p> 
+    <p> 
+        Steps:<br> 
+        1. Create all the payment types from Financial Activities --> payment categories at side menu.<br>
+        2. Click Financial Activities --> Add Payment.<br>
+        3. Select patient.<br>
+        4. Select doctor if the patient is reffered by someone.<br>
+        5. Input the amount of desired categories.<br>
+        6. Submit.
+    </p> 
+    <p>If the payment is successfull it will redirect to the invoice.<br>
+        You can print the invoice by clicking 'print' button.</p>
+
+    <p>Users also can entry expenses.</p>
+    <p>
+        Steps:<br>
+        1. Go to Financial Activities --> Expense category.<br>
+        2. Create Expense categories by clicking "Add New" Button.<br>
+        3. Go to Financial Activities --> Add Expense.<br>
+        4. Select your expense category and enter the amount.
+    </p>
+
+    <p>
+        User can see the date-to date financial report.
+        Go to 'financial report' from the sidemenu.<br>
+
+        By default it will show all the financial report dated from the begining to present.<br>
+
+        User can select date to date from above fields.<br>
+
+        If user want to see the today's report. Select both the field today.<br>
+
+
+    </p>
+    <hr>
+
+    <h3 id="medicine"><strong>H) Medicine</strong> - <a href="#toc">top</a></h3>
+    <p>
+        List of Medicine:<br>
+        Click "Medicine List" at the side menu.It will display List of medicines.<br><br>
+        Add New Medicine:<br>
+        Click "add new" button at the left top. A form will appear. Fill up the form and submit.<br>
+        Or, click "Add Medicine" button at sidemenu Medicine->Add New Medicine. <br><br>
+        Medicine can be edited and deleted.
+    </p>
+    <hr>
+
+    <h3 id="donor"><strong>I) Donor</strong> - <a href="#toc">top</a></h3>
+    <p>
+        List of donor can be added.<br>
+        Click "Donor" at the side menu.Click 'add new' button at the left top. <br>
+        A form will appear. Fill up the form and submit.
+    </p>
+    <hr>
+
+    <h3 id="bed"><strong>J) Bed</strong> - <a href="#toc">top</a></h3>
+    <p>
+        User can mange beds through this module.<br><br>
+
+        <b>Steps:</b><br>
+        1. First create bed categories from "Bed Categories" at menu.<br>
+        2. Then Add bed from "Add Bed".<br>
+
+    </p>
+    <p>
+        Users also can manage bed allotments through this module<br><br>
+
+        <b>Steps:</b><br>
+        1. Check the available beds from "Beds".<br>
+        2. Go to "Add Allotment".<br>
+        3. Select an available bed and alloted dates.<br>
+        4. Submit.
+    </p>
+    <hr>
+
+    <h3 id="report"><strong>K) Report</strong> - <a href="#toc">top</a></h3>
+    <p>Report Can be generated through this module.</p>
+    <p>
+        Three types of report can be generated.<br>
+        1. Birth Report.<br>
+        2. Operation Report.<br>
+        3. Expire Report.
+    </p>
+    <hr>
+
+
+
+            <h3 id="sms"><strong>J)SMS</strong> - <a href="#toc">top</a></h3>
+            <p>SMS can be sent through this application in SMS module.</p>
+
+            <p>
+                For sending SMS user should have a ClickaTell account.<br>
+                Go To-> www.clickatell.com and create an account. <br>
+                After login you will get an api id and api password. <br><br>
+                Then Go To Hospital Manager capplication. <br>
+                Click SMS->sms settings. <br>
+                Submit the form with your clickatell details. <br><br>
+
+                Now your SMS settings is configured. <br><br>
+
+                Buy credit in clickatell and send SMS as much as you want. <br><br>
+
+                For sending SMS,  Go To SMS -> Send SMS <br>
+                Select whom you want to send sms. <br>
+                Write message and send. <br>
+            </p>
+            <hr>
+
+
+    <h3 id="settings"><strong>L) Settings</strong> - <a href="#toc">top</a></h3>
+    <p>Site Configuration  Can be changed through this module.</p>
+    <p>
+        Different types of settings can be managed.<br>
+        1. Site Title.<br>
+        2. Address<br>
+        3. Phone Number<br>
+        4. Email Address.<br>
+        5. Currency.<br>
+        6. Discount type. Either it will be flat or percentage.
+    </p>
+
+
+
+    <p>Once again, thank you so much for purchasing this application. As I said at the beginning, I'd be glad to help you if you have any questions relating to this application. No guarantees, but I'll do my best to assist. If you have a more general question relating to the application on CodeCanyon, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+
+    <p class="append-bottom alt large"><strong>Code Aristos</strong></p>
+    <p><a href="#toc">Go To Table of Contents</a></p>
+
+    <hr class="space">
+
+</strong>
+</div><!-- end div .container -->
+</body>
+</html>
